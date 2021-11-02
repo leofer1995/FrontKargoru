@@ -1,0 +1,48 @@
+.container{
+    align-items: center;
+    background-color: rgba(45,154,207,0.4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    width: 400px;
+}
+
+.rowText{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+    .rowText input{
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid black
+    }
+
+.rowSelect{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+    .rowSelect select{
+        width: 308px;
+        border-radius: 5px;
+        border: 1px solid black
+    }
+
+.submit{
+    margin-top: 10px;
+    border-radius: 5px;
+    border:1px solid rgba(45,154,207,1);
+    background-color: rgba(45,154,207,0.6);
+}
+    .submit:hover{
+        background-color: rgba(45,154,207,1);
+    }
+
+.errors{
+    font-size: small;
+    color: red;
+    text-align: left;
+}

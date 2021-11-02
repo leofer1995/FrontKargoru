@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(45,154,207,1);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.butons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.butons button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border:1px solid black;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+.butons button:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}

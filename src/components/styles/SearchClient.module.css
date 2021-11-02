@@ -1,0 +1,15 @@
+.input{
+    border:1px solid black;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    border:1px solid black;
+    height: 24px;
+    border-radius: 5px;
+    background-color: rgba(45,154,207,0.5);
+}
+    .btn:hover{
+        background-color: rgba(45,154,207,1);
+    }

@@ -1,0 +1,44 @@
+.points{
+    display: flex;
+    
+}
+
+.point{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .point label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .point h3 {
+        padding: 0;
+        margin:0;
+    }
+
+.contInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+    .contInputs h3 {
+        margin:0px;
+    }
+
+    .contInputs textarea{
+        width: 350px;
+        height: 80px;
+    }
+
+    .contInputs input {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .contInputs button {
+        margin-top: 10px;
+    }

@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import FormClient from "./components/FormClient";
+import Menu from "./components/Menu";
+import { connect } from 'react-redux';
+import Quotation from './components/Quotation';
+import Modal from './components/Modal';
+import { Route } from 'react-router-dom';
+import SearchQuotations from "./components/SearchQuotations";
+import './App.css'
 
-function App() {
+function App({modal}) {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route exact path='/'>
+        <Menu />
+      </Route>
+
+      <Route path='/quotation'>
+        <Quotation />
+      </Route>
+
+      <Route path='/newclient'>
+        <FormClient />
+      </Route>
+
+      <Route path='/searchquotation'>
+        <SearchQuotations />
+      </Route>
+
+      {modal.render && <Modal />}
     </div>
   );
 }
-
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    modal:state.modal
+  }
+}
+export default connect(mapStateToProps)(App);

@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quotation{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 800px;
+    margin-top: 10px;
+    min-height: 500px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.datesClient{
+    display: flex;
+    background-color: rgba(45,154,207,0.5);
+    padding: 20px;
+}
+
+.dates{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.total{
+    background-color: rgba(45,154,207,0.5);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.concepts{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color:rgba(45,154,207,0.2);
+}
+    .concepts:hover{
+        background-color:rgba(45,154,207,0.4)
+    }
+
+.button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+    .button h1 {
+        margin:0px
+    }
+
+.concept{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 275px;
+    overflow-y: auto;
+}
+
+.btnExit{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(45,154,207,0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+    .btnExit:hover {
+        background-color: rgba(45,154,207,1);
+    }
